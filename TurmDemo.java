@@ -7,11 +7,12 @@ public class TurmDemo {
         while(multiplikator <= 9){
             System.out.println(zahl + " * " + multiplikator + " = " + zahl * multiplikator);
             zahl = zahl * multiplikator;
+            if(multiplikator == 9){break;}
             multiplikator++;
         }
 
         //fixing "bug" multiplikator gets incremented to 10
-        multiplikator--;
+        //multiplikator--;
 
         while(multiplikator >= 2){
             System.out.println(zahl + " / " + multiplikator + " = " + zahl / multiplikator);
